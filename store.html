@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+<title>Kopp Reeds - Store</title>
+
+<!-- dshea-include BEGIN include/header.html ***************** -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="main.css" type="text/css">
+<!-- dshea-include END include/header.html ***************** -->
+
+<body>
+
+<!-- dshea-include BEGIN include/nav.html ***************** -->
+<nav class="w3-sidebar w3-blue-grey w3-collapse w3-top w3-large w3-padding-small" style="z-index:3;width:225px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-24"><b>Kopp Reeds</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a id="homeMenu" href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a id="myBtn" href="javascript:void(0)" onclick="myAccFunc()" class="w3-bar-item w3-button w3-hover-white">
+    Reeds <i class="fa fa-caret-down"></i></a> 
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-small w3-medium">
+      <a href="modern.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Modern Bassoon</a>
+      <a href="french.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">French Bassoon</a>
+      <a href="contra.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contra Bassoon</a>
+      <a href="bassDulcian.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Bass Dulcian</a>
+      <a href="baroque.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Baroque Bassoon</a>
+      <a href="classical.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Classical Bassoon</a>
+    </div>
+    <a href="store.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Store</a> 
+    <a href="customers.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Customers Speak</a> 
+    <a href="lessons.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Lessons</a> 
+    <a href="publications.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Publications</a> 
+    <a href="tradingPost.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Jim's Trading Post</a>
+    <a href="links.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Links</a>
+    <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact Us</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-blue-grey w3-xlarge w3-padding-small">
+  <a href="javascript:void(0)" class="w3-button w3-blue-grey w3-margin-right" onclick="w3_open()">&#9776;</a>
+  <span>Kopp Reeds</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close();" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<!-- dshea-include END include/nav.html ***************** -->
+
+
+
+<!-- PAGE CONTENT -->
+<div class="w3-main" style="margin-left:250px;margin-right:25px">
+
+  <!-- Store -->
+  <div class="w3-container" style="margin-top:80px">
+    <div class="w3-row">
+      <div class="w3-col m5">
+        <a href="store.html">
+          <img src="images/paypalImage.png">
+          <br>
+          PayPal Order Form
+        </a>
+      </div>
+      <div class="w3-col m4">
+        <a href="store2.html.html">
+          <img src="images/checkImage.jpg">
+          <br>
+          Check Order Form
+        </a>
+      </div>
+      <div class="w3-col m3 w3-right-align">
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="encrypted"
+          value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+
+      </div>
+    </div>   
+  </div>
+
+  <div class="w3-container" style="margin-top:30px">
+    <h1 class="w3-xxlarge w3-text-blue-grey"><b>Special Instructions</b></h1>
+    <hr style="width:50px;border:5px solid grey" class="w3-round">
+  </div>
+
+  <div class="w3-container"> <p>Do you have special concerns affecting
+    your reed order? Flattish bassoon, sharpish bassoon, need easy
+    low-register response, need powerful sound, etc.? You can add
+    special instructions on the <b>Review your information</b>
+    screen. Just click on the <b>Add special instructions to the
+    seller</b> button underneath the Shipping Address and Shipping
+    Method.</p>
+  </div>
+  
+  <div class="w3-container" style="margin-top:30px">
+    <h1 class="w3-xxlarge w3-text-blue-grey"><b>Our Guarantee</b></h1>
+    <hr style="width:50px;border:5px solid grey" class="w3-round">
+  </div>
+
+  <div class="w3-container"> <p>Standard reeds may be returned for
+    free adjustment or refund within seven days of receipt. The reed
+    must be in like-new condition.</p>
+  </div>
+
+  <div class="w3-container" style="margin-top:30px">
+    <h1 class="w3-xxlarge w3-text-blue-grey"><b>Order Shipping</b></h1>
+    <hr style="width:50px;border:5px solid grey" class="w3-round">
+  </div>
+
+  <div class="w3-container"> <p>Reeds will be shipped two to eight
+    weeks after your order is placed. (Rush service will not be
+    available). Please submit your order form early, then be prepared to
+    wait.<br><br>
+    If you have questions, please send an email from the
+    <a href="contact.html">Contact page</a>.</p>
+  </div>
+
+  <div class="w3-container" style="margin-top:30px">
+    <h1 class="w3-xxlarge w3-text-blue-grey"><b>Finished Reeds</b></h1>
+    <hr style="width:50px;border:5px solid grey" class="w3-round">
+  </div>
+
+  <div class="w3-container w3-margin-top">
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="KLEFAE5GW6HGA">
+      <input type="hidden" name="on0" value="model">
+      <div class="w3-row">
+        <div class="w3-col m5">
+          Modern Bassoon (Heckel, Fox, Puchner, etc.)
+        </div>
+        <div class="w3-col m4 w3-right-align">
+          <select name="os0">
+            <option value="Medium model">Medium model $32.00 USD</option>
+            <option value="Wide model">Wide model $32.00 USD</option>
+            <option value="HP2 model">HP2 model $32.00 USD</option>
+          </select>
+        </div>
+        <div class="w3-col m3 w3-right-align" style="margin-top: 5px;">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif"
+                 border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        </div>
+      </div>
+    </form>
+  </div>
+      
+
+  <div class="w3-container w3-margin-top">
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="6TLGHVDSUUU9A">
+      <input type="hidden" name="on0" value="model">
+      <div class="w3-row">
+        <div class="w3-col m5">
+          French Bassoon (Buffet Crampon type)
+        </div>
+        <div class="w3-col m4 w3-right-align">
+          <select name="os0">
+            <option value="Standard model">Standard model $32.00 USD</option>
+          </select>
+        </div>
+        <div class="w3-col m3 w3-right-align" style="margin-top: 5px;">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif"
+                 border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        </div>
+      </div>
+    </form>
+  </div>
+      
+
+  <div class="w3-container w3-margin-top">
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="DPKAB8LAVLSK8">
+      <input type="hidden" name="on0" value="model">
+      <div class="w3-row">
+        <div class="w3-col m5">
+          Contrabassoon
+        </div>
+        <div class="w3-col m4 w3-right-align">
+          <select name="os0">
+            <option value="Standard model">Standard model $32.00 USD</option>
+            <option value="Short-scrape model">Short-scrape model $34.00 USD</option>
+          </select>
+        </div>
+        <div class="w3-col m3 w3-right-align" style="margin-top: 5px;">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif"
+                 border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        </div>
+      </div>
+    </form>
+  </div>
+      
+
+  <div class="w3-container w3-margin-top">
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="FYX6L2HC2MMNL">
+      <input type="hidden" name="on0" value="model">
+      <div class="w3-row">
+        <div class="w3-col m5">
+          Classical Bassoon
+        </div>
+        <div class="w3-col m4 w3-right-align">
+          <select name="os0">
+            <option value="Standard model">Standard model $32.00 USD</option>
+            <option value="Short-scrape model">Short-scrape model $34.00 USD</option>
+          </select>
+        </div>
+        <div class="w3-col m3 w3-right-align" style="margin-top: 5px;">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif"
+                 border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        </div>
+      </div>
+    </form>
+  </div>
+      
+
+  <div class="w3-container w3-margin-top">
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="W43HLQGSN33QQ">
+      <input type="hidden" name="on0" value="model">
+      <div class="w3-row">
+        <div class="w3-col m5">
+          Baroque Bassoon
+        </div>
+        <div class="w3-col m4 w3-right-align">
+          <select name="os0">
+            <option value="Standard model">Standard model $32.00 USD</option>
+            <option value="Eichentopf model">Eichentopf model $32.00 USD</option>
+            <option value="Prudent model">Prudent model $32.00 USD</option>
+            <option value="Short-scrape model">Short-scrape model $34.00 USD</option>
+          </select>
+        </div>
+        <div class="w3-col m3 w3-right-align" style="margin-top: 5px;">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif"
+                 border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        </div>
+      </div>
+    </form>
+  </div>
+      
+
+  <div class="w3-container w3-margin-top">
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="DHUK6TLTCATZ4">
+      <input type="hidden" name="on0" value="model">
+      <div class="w3-row">
+        <div class="w3-col m5">
+          Bass Dulcian
+        </div>
+        <div class="w3-col m4 w3-right-align">
+          <select name="os0">
+            <option value="Standard model">Standard model $32.00 USD</option>
+            <option value="Short-scrape model">Short-scrape model $34.00 USD</option>
+          </select>
+        </div>
+        <div class="w3-col m3 w3-right-align" style="margin-top: 5px;">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif"
+                 border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        </div>
+      </div>
+    </form>
+  </div>
+      
+
+    
+  <div class="w3-container" style="margin-top:30px">
+    <h1 class="w3-xxlarge w3-text-blue-grey"><b>Formed Blanks</b></h1>
+    <hr style="width:50px;border:5px solid grey" class="w3-round">
+  </div>
+
+  
+  <div class="w3-container w3-margin-top">
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="S5N4STWGAYTY2">
+      <input type="hidden" name="on0" value="model">
+      <div class="w3-row">
+        <div class="w3-col m5">
+          Modern Bassoon blank (Heckel, Fox, Puchner, etc.)
+        </div>
+        <div class="w3-col m4 w3-right-align">
+          <select name="os0">
+            <option value="Medium model">Medium model $17.00 USD</option>
+            <option value="Wide model">Wide model $17.00 USD</option>
+            <option value="HP2 model">HP2 model $17.00 USD</option>
+          </select>
+        </div>
+        <div class="w3-col m3 w3-right-align" style="margin-top: 5px;">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif"
+                 border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        </div>
+      </div>
+    </form>
+  </div>
+      
+
+  <div class="w3-container w3-margin-top">
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="DKY9XN9BXCSYJ">
+      <input type="hidden" name="on0" value="model">
+      <div class="w3-row">
+        <div class="w3-col m5">
+          French Bassoon blank (Buffet Crampon type)
+        </div>
+        <div class="w3-col m4 w3-right-align">
+          <select name="os0">
+            <option value="Standard model">Standard model $32.00 USD</option>
+          </select>
+        </div>
+        <div class="w3-col m3 w3-right-align" style="margin-top: 5px;">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif"
+                 border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        </div>
+      </div>
+    </form>
+  </div>
+      
+
+  <div class="w3-container w3-margin-top">
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="6E8VLWVXEJ4ZE">
+      <input type="hidden" name="on0" value="model">
+      <div class="w3-row">
+        <div class="w3-col m5">
+          Contrabassoon blank
+        </div>
+        <div class="w3-col m4 w3-right-align">
+          <select name="os0">
+            <option value="Standard model">Standard model $19.00 USD</option>
+          </select>
+        </div>
+        <div class="w3-col m3 w3-right-align" style="margin-top: 5px;">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif"
+                 border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        </div>
+      </div>
+    </form>
+  </div>
+      
+
+  <div class="w3-container w3-margin-top">
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="GA5YB7AC6YBRJ">
+      <input type="hidden" name="on0" value="model">
+      <div class="w3-row">
+        <div class="w3-col m5">
+          Classical Bassoon blank
+        </div>
+        <div class="w3-col m4 w3-right-align">
+          <select name="os0">
+            <option value="Standard model">Standard model $19.00 USD</option>
+          </select>
+        </div>
+        <div class="w3-col m3 w3-right-align" style="margin-top: 5px;">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif"
+                 border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        </div>
+      </div>
+    </form>
+  </div>
+      
+
+
+  <div class="w3-container w3-margin-top">
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="SPDKN8NVZUBY6">
+      <input type="hidden" name="on0" value="model">
+      <div class="w3-row">
+        <div class="w3-col m5">
+          Baroque Bassoon blank
+        </div>
+        <div class="w3-col m4 w3-right-align">
+          <select name="os0">
+            <option value="Eichentopf model">Eichentopf model $19.00 USD</option>
+            <option value="Prudent model">Prudent model $19.00 USD</option>
+          </select>
+        </div>
+        <div class="w3-col m3 w3-right-align" style="margin-top: 5px;">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif"
+                 border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        </div>
+      </div>
+    </form>
+  </div>
+      
+
+  <div class="w3-container w3-margin-top">
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="JRGTZEUM2PQ2W">
+      <input type="hidden" name="on0" value="model">
+      <div class="w3-row">
+        <div class="w3-col m5">
+          Bass Dulcian blank
+        </div>
+        <div class="w3-col m4 w3-right-align">
+          <select name="os0">
+            <option value="Standard model">Standard model $19.00 USD</option>
+          </select>
+        </div>
+        <div class="w3-col m3 w3-right-align" style="margin-top: 5px;">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif"
+                 border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        </div>
+      </div>
+    </form>
+  </div>
+
+  
+  <div class="w3-container" style="margin-top:30px">
+    <h1 class="w3-xxlarge w3-text-blue-grey"><b>Books</b></h1>
+    (U.S. Customers only)
+    <hr style="width:50px;border:5px solid grey" class="w3-round">
+  </div>
+
+
+  <div class="w3-container w3-margin-top">
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="GDUFMYA3C7SBE">
+      <input type="hidden" name="on0" value="model">
+      <div class="w3-row">
+        <div class="w3-col m5">
+          <img class="pictureLeft" src="images/yupthumb.jpg"><em>The Bassoon</em> by James B. Kopp
+        </div>
+        <div class="w3-col m4 w3-right-align">
+          <select name="os0">
+            <option value="Please sign title page">Please sign title page $40.00 USD</option>
+            <option value="Do not sign">Do not sign $40.00 USD</option>
+          </select>
+        </div>
+        <div class="w3-col m3 w3-right-align" style="margin-top: 5px;">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif"
+                 border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        </div>
+      </div>
+    </form>
+  </div>
+      
+
+  <div class="w3-container w3-margin-top">
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="RSND34X83YDTE">
+      <input type="hidden" name="on0" value="model">
+      <div class="w3-row">
+        <div class="w3-col m5">
+          <img class="pictureLeft" src="images/TCEthumb.jpg"><em>Tutor Chart Etude</em> by William Waterhouse
+        </div>
+        <div class="w3-col m4 w3-right-align">
+          <select name="os0">
+            <option value="Book">Book $15.00 USD</option>
+          </select>
+        </div>
+        <div class="w3-col m3 w3-right-align" style="margin-top: 5px;">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif"
+                 border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        </div>
+      </div>
+    </form>
+  </div>
+      
+
+  <div class="w3-container w3-margin-top">
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="HU9YUY28X4NT2">
+      <input type="hidden" name="on0" value="model">
+      <div class="w3-row">
+        <div class="w3-col m5">
+          <img class="pictureLeft" src="images/PBthumb.jpg"><em>The Proud Bassoon</em> by William Waterhouse
+        </div>
+        <div class="w3-col m4 w3-right-align">
+          <select name="os0">
+            <option value="Book">Book $15.00 USD</option>
+          </select>
+        </div>
+        <div class="w3-col m3 w3-right-align" style="margin-top: 5px;">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif"
+                 border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        </div>
+      </div>
+    </form>
+  </div>
+      
+
+  <div class="w3-container w3-margin-top">
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="84W485H4TGU7C">
+      <input type="hidden" name="on0" value="model">
+      <div class="w3-row">
+        <div class="w3-col m5">
+          <img src="images/yupthumb.jpg">
+	  <img src="images/TCEthumb.jpg">
+	  <em>The Bassoon</em> and <em>Tutor Chart Etude</em></td>
+        </div>
+        <div class="w3-col m4 w3-right-align">
+          <select name="os0">
+            <option value="Books">Books $45.00 USD</option>
+          </select>
+        </div>
+        <div class="w3-col m3 w3-right-align" style="margin-top: 5px;">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif"
+                 border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        </div>
+      </div>
+    </form>
+  </div>
+      
+
+  <div class="w3-container w3-right-align w3-margin-top">
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+      ">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+  </div>	
+
+
+  <div class="w3-container" style="margin-top:30px">
+    <h1 class="w3-xxlarge w3-text-blue-grey"><b>Items for Sale</b></h1>
+    <hr style="width:50px;border:5px solid grey" class="w3-round">
+  </div>
+
+  <div class="w3-container" style="margin-top:30px">
+      <table>
+        <tr valign="top"> 
+          <td>Moeck Ehlert tenor recorder</td>
+          <td align="right"> <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="5ES2NQQESQ38E">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"> 
+            </form></td>
+        </tr>
+        <tr valign="top"> 
+          <td>Heckel crook</td>
+          <td align="right"> <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="VA9A4E429SVGL">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"> 
+            </form></td>
+        </tr>
+        <tr valign="top"> 
+          <td>Other</td>
+          <td align="right"> <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="XX8FXWKWK7GWG">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"> 
+            </form></td>
+        </tr>
+      </table>
+  </div>
+
+</div>
+<!-- End PAGE CONTENT -->
+
+<!-- dshea-include BEGIN include/footer.html ***************** -->
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-24" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p>
+</div>
+<!-- dshea-include END include/footer.html ***************** -->
+
+<script src="include/navscript.js" type="text/javascript"></script>
+
+</body>
+</html>
