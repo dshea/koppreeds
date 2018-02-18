@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+<title>Kopp Reeds - Store</title>
+
+<!-- dshea-include BEGIN include/header.html ***************** -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="main.css" type="text/css">
+<!-- dshea-include END include/header.html ***************** -->
+
+<body>
+
+<!-- dshea-include BEGIN include/nav.html ***************** -->
+<nav class="w3-sidebar w3-blue-grey w3-collapse w3-top w3-large w3-padding-small" style="z-index:3;width:225px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-24"><b>Kopp Reeds</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a id="homeMenu" href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a id="myBtn" href="javascript:void(0)" onclick="myAccFunc()" class="w3-bar-item w3-button w3-hover-white">
+    Reeds <i class="fa fa-caret-down"></i></a> 
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-small w3-medium">
+      <a href="modern.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Modern Bassoon</a>
+      <a href="french.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">French Bassoon</a>
+      <a href="contra.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contra Bassoon</a>
+      <a href="bassDulcian.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Bass Dulcian</a>
+      <a href="baroque.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Baroque Bassoon</a>
+      <a href="classical.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Classical Bassoon</a>
+    </div>
+    <a href="store.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Store</a> 
+    <a href="customers.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Customers Speak</a> 
+    <a href="lessons.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Lessons</a> 
+    <a href="publications.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Publications</a> 
+    <a href="tradingPost.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Jim's Trading Post</a>
+    <a href="links.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Links</a>
+    <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact Us</a>
+  </div>
+</nav>
+
+  
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-blue-grey w3-xlarge w3-padding-small">
+  <a href="javascript:void(0)" class="w3-button w3-blue-grey w3-margin-right" onclick="w3_open()">&#9776;</a>
+  <span>Kopp Reeds</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close();" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<!-- dshea-include END include/nav.html ***************** -->
+
+
+
+<!-- PAGE CONTENT -->
+<div class="w3-main" style="margin-left:250px;margin-right:25px">
+
+  <!-- Store -->
+  <div class="w3-container" style="margin-top:80px">
+    <div class="w3-row">
+      <div class="w3-col m5">
+        <a href="store.html">
+          <img src="images/paypalImage.png">
+          <br>
+          PayPal Order Form
+        </a>
+      </div>
+      <div class="w3-col m7">
+        <a href="store2.html">
+          <img src="images/checkImage.jpg">
+          <br>
+          Check Order Form
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container" style="margin-top:30px">
+    <h1 class="w3-xxlarge w3-text-blue-grey"><b>Special Instructions</b></h1>
+    <hr style="width:50px;border:5px solid grey" class="w3-round">
+  </div>
+
+  <div class="w3-container"> <p>Do you have special concerns affecting
+    your reed order? Flattish bassoon, sharpish bassoon, need easy
+    low-register response, need powerful sound, etc.? You can add
+    special instructions on the <b>Review your information</b>
+    screen. Just click on the <b>Add special instructions to the
+    seller</b> button underneath the Shipping Address and Shipping
+    Method.</p>
+  </div>
+  
+  <div class="w3-container" style="margin-top:30px">
+    <h1 class="w3-xxlarge w3-text-blue-grey"><b>Our Guarantee</b></h1>
+    <hr style="width:50px;border:5px solid grey" class="w3-round">
+  </div>
+
+  <div class="w3-container"> <p>Standard reeds may be returned for
+    free adjustment or refund within seven days of receipt. The reed
+    must be in like-new condition.</p>
+  </div>
+
+  <div class="w3-container" style="margin-top:30px">
+    <h1 class="w3-xxlarge w3-text-blue-grey"><b>Order Shipping</b></h1>
+    <hr style="width:50px;border:5px solid grey" class="w3-round">
+  </div>
+
+  <div class="w3-container"> <p>Reeds will be shipped two to eight
+    weeks after your order is placed. (Rush service will not be
+    available). Please submit your order form early, then be prepared to
+    wait.<br><br>
+    If you have questions, please send an email from the
+    <a href="contact.html">Contact page</a>.</p>
+  </div>
+
+  <div class="w3-container w3-margin-top">
+
+      <form method="post" action="/cgi-sys/formmail.pl" name="reedstuff">
+        <table width="100%" border="0" bordercolorlight="#FFFFFF">
+          <tr> 
+            <td width="60%">&nbsp;</td>
+            <td width="8%"> <div align="right"><b><font size="+1"><u>Price</u></font></b></div></td>
+            <td width="16%"> <div align="right"><font size="+1"><b><u>Quantity</u></b></font></div></td>
+            <td width="16%"> <div align="right"><b><font size="+1"><u>Subtotal</u></font></b></div></td>
+          </tr>
+          <tr> 
+            <td width="60%"><b>FINISHED REEDS</b></td>
+            <td width="8%">&nbsp;</td>
+            <td width="16%">&nbsp;</td>
+            <td width="16%">&nbsp;</td>
+          </tr>
+          <tr> 
+            <td width="60%">Modern Bassoon (medium model)</td>
+            <td width="8%"> <div align="right">$32.00</div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="BassoonMedium" type="text" id="BassoonMedium" size="3">
+              </div></td>
+            <td> <div align="right"> 
+                <input name="BassoonMedTotal" type="text" id="BassoonMedTotal" size="4">
+              </div></td>
+          </tr>
+          <tr> 
+            <td width="60%">Modern Bassoon (wide model)</td>
+            <td width="8%"> <div align="right">32.00</div></td>
+            <td width="16%"><div align="right">
+	      <input name="BassoonWide" type="text" id="BassoonWide" size="3"> 
+	    </div></td>
+            <td> <div align="right"> 
+                <input name="BassoonWideTotal" type="text" id="BassoonWideTotal" size="4">
+              </div></td>
+          </tr>
+          <tr> 
+            <td width="60%">Modern Bassoon (HP2 model)</td>
+            <td width="8%"><div align="right">32.00</div></td>
+            <td width="16%"><div align="right"> 
+                <input name="BassoonHP2" type="text" id="BassoonHP2" size="3">
+              </div></td>
+            <td><div align="right"> 
+                <input name="BassoonHP2Total" type="text" id="BassoonHP2Total" size="4">
+              </div></td>
+          </tr>
+          <tr> 
+            <td width="60%">French Bassoon (standard model)</td>
+            <td width="8%"> <div align="right">32.00</div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="ContraStandard" type="text" id="ContraStandard" size="3">
+              </div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="ContraStandardTotal" type="text" id="ContraStandardTotal" size="4">
+              </div></td>
+          </tr>
+          <tr> 
+            <td width="60%">Contrabassoon (standard model)</td>
+            <td width="8%"> <div align="right">32.00</div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="ContraStandard" type="text" id="ContraStandard" size="3">
+              </div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="ContraStandardTotal" type="text" id="ContraStandardTotal" size="4">
+              </div></td>
+          </tr>
+          <tr> 
+            <td width="60%">Contrabassoon (short-scrape model)</td>
+            <td width="8%"> <div align="right">34.00</div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="ContraShortScrape" type="text" id="ContraShortScrape" size="3">
+              </div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="ContraShortScrapeTotal" type="text" id="ContraShortScrapeTotal" size="4">
+              </div></td>
+          </tr>
+          <tr> 
+            <td width="60%">Classical Bassoon (standard model)</td>
+            <td width="8%"> <div align="right">32.00</div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="ClassicalStandard" type="text" id="ClassicalStandard" size="3">
+              </div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="ClassicalStandardTotal" type="text" id="ClassicalStandardTotal" size="4">
+              </div></td>
+          </tr>
+          <tr> 
+            <td width="60%">Classical Bassoon (short-scrape model)</td>
+            <td width="8%"> <div align="right">34.00</div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="ClassicalShortScrape" type="text" id="ClassicalShortScrape" size="3">
+              </div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="ClassicalShortScrapeTotal" type="text" id="ClassicalShortScrapeTotal" size="4">
+              </div></td>
+          </tr>
+          <tr> 
+            <td width="60%">Baroque Bassoon (standard model)</td>
+            <td width="8%"><div align="right">32.00</div></td>
+            <td width="16%"><div align="right"> 
+                <input name="BaroqueStandard" type="text" id="BaroqueStandard" size="3">
+              </div></td>
+            <td><div align="right"> 
+                <input name="BaroqueStandardTotal" type="text" id="BaroqueStandardTotal" size="4">
+              </div></td>
+          </tr>
+          <tr> 
+            <td width="60%">Baroque Bassoon (Eichentopf model)</td>
+            <td width="8%"> <div align="right">32.00</div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="BaroqueEichentopf" type="text" id="BaroqueEichentopf" size="3">
+              </div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="BaroqueEichentopfTotal" type="text" id="BaroqueEichentopfTotal" size="4">
+              </div></td>
+          </tr>
+          <tr> 
+            <td width="60%">Baroque Bassoon (Prudent model)</td>
+            <td width="8%"> <div align="right">32.00</div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="BaroquePrudent" type="text" id="BaroquePrudent" size="3">
+              </div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="BaroquePrudentTotal" type="text" id="BaroquePrudentTotal" size="4">
+              </div></td>
+          </tr>
+          <tr> 
+            <td width="60%">Baroque Bassoon (short-scrape model)</td>
+            <td width="8%"> <div align="right">34.00</div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="BaroqueShortScrape" type="text" id="BaroqueShortScrape" size="3">
+              </div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="BaroqueShortScrapeTotal" type="text" id="BaroqueShortScrapeTotal" size="4">
+              </div></td>
+          </tr>
+          <tr> 
+            <td width="60%">Bass Dulcian (standard model)</td>
+            <td width="8%"> <div align="right">32.00</div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="DulcianStandard" type="text" id="DulcianStandard" size="3">
+              </div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="DulcianStandardTotal" type="text" id="DulcianStandardTotal" size="4">
+              </div></td>
+          </tr>
+          <tr> 
+            <td width="60%">Bass Dulcian (short-scrape model)</td>
+            <td width="8%"> <div align="right">34.00</div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="DulcianShortScrape" type="text" id="DulcianShortScrape" size="3">
+              </div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="DulcianShortScrapeTotal" type="text" id="DulcianShortScrapeTotal" size="4">
+              </div></td>
+          </tr>
+          <tr> 
+            <td width="60%">&nbsp;</td>
+            <td width="8%">&nbsp;</td>
+            <td width="16%">&nbsp;</td>
+            <td width="16%">&nbsp;</td>
+          </tr>
+          <tr> 
+            <td width="60%"><b>FORMED BLANKS</b></td>
+            <td width="8%"> <div align="right"></div></td>
+            <td width="16%">&nbsp;</td>
+            <td width="16%">&nbsp;</td>
+          </tr>
+          <tr> 
+            <td width="60%">Modern Bassoon (medium model)</td>
+            <td width="8%"> <div align="right">$17.00</div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="BlankBassoonMedium" type="text" id="BlankBassoonMedium" size="3">
+              </div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="BlankBassoonMediumTotal" type="text" id="BlankBassoonMediumTotal" size="4">
+              </div></td>
+          </tr>
+          <tr> 
+            <td width="60%">Modern Bassoon (wide model)</td>
+            <td width="8%"> <div align="right">17.00</div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="BlankBassoonWide" type="text" id="BlankBassoonWide" size="3">
+              </div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="BlankBassoonWideTotal" type="text" id="BlankBassoonWideTotal" size="4">
+              </div></td>
+          </tr>
+          <tr> 
+            <td width="60%">Modern Bassoon (HP2 model)</td>
+            <td width="8%"> <div align="right">17.00</div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="BlankBassoonHP2" type="text" id="BlankBassoonHP2" size="3">
+              </div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="BlankBassoonHP2Total" type="text" id="BlankBassoonHP2Total" size="4">
+              </div></td>
+          </tr>
+          <tr> 
+            <td width="60%">French Bassoon (Buffet model)</td>
+            <td width="8%"> <div align="right">17.00</div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="BlankFrenchBassoon" type="text" id="BlankFrenchBassoon" size="3">
+              </div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="BlankFrenchBassoonTotal" type="text" id="BlankFrenchBassoonTotal" size="4">
+              </div></td>
+          </tr>
+          <tr> 
+            <td width="60%">Contrabassoon (standard model)</td>
+            <td width="8%"> <div align="right">19.00</div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="BlankContra" type="text" id="BlankContra" size="3">
+              </div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="BlankContraTotal" type="text" id="BlankContraTotal" size="4">
+              </div></td>
+          </tr>
+          <tr> 
+            <td width="60%">Classical Bassoon (standard model)</td>
+            <td width="8%"> <div align="right">19.00</div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="BlankClassical" type="text" id="BlankClassical" size="3">
+              </div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="BlankClassicalTotal" type="text" id="BlankClassicalTotal" size="4">
+              </div></td>
+          </tr>
+          <tr> 
+            <td width="60%">Baroque Bassoon (Eichentopf model)</td>
+            <td width="8%"> <div align="right">19.00</div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="BlankBaroqueEichentopf" type="text" id="BlankBaroqueEichentopf" size="3">
+              </div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="BlankBaroqueEichentopfTotal" type="text" id="BlankBaroqueEichentopfTotal" size="4">
+              </div></td>
+          </tr>
+          <tr> 
+            <td width="60%">Baroque Bassoon (Prudent model)</td>
+            <td width="8%"> <div align="right">19.00</div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="BlankBaroquePrudent" type="text" id="BlankBaroquePrudent" size="3">
+              </div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="BlankBaroquePrudentTotal" type="text" id="BlankBaroquePrudentTotal" size="4">
+              </div></td>
+          </tr>
+          <tr> 
+            <td width="60%">Bass Dulcian (standard model)</td>
+            <td width="8%"> <div align="right">19.00</div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="BlankDulcian" type="text" id="BlankDulcian" size="3">
+              </div></td>
+            <td width="16%"> <div align="right"> 
+                <input name="BlankDulcianTotal" type="text" id="BlankDulcianTotal" size="4">
+              </div></td>
+          </tr>
+          <tr> 
+            <td width="60%">&nbsp;</td>
+            <td width="8%">&nbsp;</td>
+            <td width="16%">&nbsp;</td>
+            <td width="16%">&nbsp;</td>
+          </tr>
+          <tr> 
+            <td width="60%"><b>SUBTOTAL</b></td>
+            <td width="8%">&nbsp;</td>
+            <td width="16%">&nbsp;</td>
+            <td width="16%"> <div align="right"> 
+                <input name="subtotal" type="text" id="subtotal" size="4">
+              </div></td>
+          </tr>
+          <tr> 
+            <td width="60%">&nbsp;</td>
+            <td width="8%">&nbsp;</td>
+            <td width="16%">&nbsp;</td>
+            <td width="16%">&nbsp;</td>
+          </tr>
+          <tr> 
+            <td width="60%">Shipping and handling (United States only)</td>
+            <td width="8%"> <div align="right">$7.00</div></td>
+            <td width="16%">&nbsp;</td>
+            <td width="16%"> <div align="right"> 
+                <input name="ShippingUSA" type="text" id="ShippingUSA" size="4">
+              </div></td>
+          </tr>
+          <tr> 
+            <td width="60%">Shipping and handling (International)</td>
+            <td width="8%"> <div align="right">$18.00</div></td>
+            <td width="16%">&nbsp;</td>
+            <td width="16%"> <div align="right"> 
+                <input name="ShippingInternational" type="text" id="ShippingInternational" size="4">
+              </div></td>
+          </tr>
+          <tr> 
+            <td width="60%">&nbsp;</td>
+            <td width="8%">&nbsp;</td>
+            <td width="16%">&nbsp;</td>
+            <td width="16%">&nbsp;</td>
+          </tr>
+          <tr> 
+            <td width="60%">New Jersey Residents add 7% sales tax</td>
+            <td width="8%">&nbsp;</td>
+            <td width="16%">&nbsp;</td>
+            <td width="16%"> <div align="right"> 
+                <input name="NJSalesTax" type="text" id="NJSalesTax" size="4">
+              </div></td>
+          </tr>
+          <tr> 
+            <td width="60%">&nbsp;</td>
+            <td width="8%">&nbsp;</td>
+            <td width="16%">&nbsp;</td>
+            <td width="16%">&nbsp;</td>
+          </tr>
+          <tr> 
+            <td width="60%"><b><font size="+1">TOTAL</font></b></td>
+            <td width="8%">&nbsp;</td>
+            <td width="16%">&nbsp;</td>
+            <td width="16%"> <div align="right"> 
+                <input name="total" type="text" id="total" size="6">
+              </div></td>
+          </tr>
+        </table>
+        <table width="100%" border="0">
+          <tr> 
+            <td><p>&nbsp;</p>
+              <p>Name 
+                <input name="Name" type="text" id="Name">
+              </p></td>
+          </tr>
+          <tr> 
+            <td><p>E-mail address 
+              <input name="email" type="text" id="email"> 
+			  </p></td>
+          </tr>
+          <tr> 
+            <td><p>Street 
+                <textarea name="address" cols="40" rows="2" wrap="VIRTUAL" id="address"></textarea>
+              </p>
+              <p> City 
+                <input name="city" type="text" id="city" value="">
+                State 
+                <input name="state" type="text" id="state" value="" size="3">
+                Zip 
+                <input name="zip" type="text" id="zip" size="7">
+              </p>
+              <p> Country 
+                <input name="country" type="text" id="country">
+              </p></td>
+          </tr>
+          <tr> 
+            <td><p>Make/model of instrument 
+                <input name="MakeOfInstrument" type="text" id="MakeOfInstrument">
+              </p>
+              <p>Make/model of bocal 
+                <input name="MakeOfBocal" type="text" id="MakeOfBocal">
+              </p></td>
+          </tr>
+          <tr> 
+            <td><p><a name="concerns"></a>Special concerns or requests 
+                <textarea name="concerns" cols="67" id="concerns"></textarea>
+              </p></td>
+          </tr>
+          <tr> 
+            <td>Your delivery time is based on your date of order. But payment 
+              in full must be received before shipping. Thank you.</td>
+          </tr>
+        </table>
+        <p> 
+          <input name="Submit" type="submit" id="Submit" value="Place Order">
+          <input name="recipient" type="hidden" id="recipient" value="james@koppreeds.com">
+          <input name="subject" type="hidden" id="subject" value="Anches">
+          <input name="title" type="hidden" id="title" value="Thank You for Your Order">
+          <input name="Payment" type="hidden" id="Payment" value="Please send your payment, payable to James Kopp (our bank will not accept payment to any other name).&nbsp;You need not send payment now.  Your reeds will be ready for shipment in one to three months. ">
+          <input name="Payment2" type="hidden" id="Payment2" value="You will receive an e-mail confirmation and request for payment at that time. Upon request, please send your payment promptly. Unpaid orders will be cancelled after a reasonable grace period.">
+          <input name="MailTo" type="hidden" id="MailTo" value="James Kopp 6704 SE 20th Avenue, Portland OR 97202">
+        </p>
+      </form>    
+  </div>
+
+</div>
+<!-- End PAGE CONTENT -->
+
+<!-- dshea-include BEGIN include/footer.html ***************** -->
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-24" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p>
+</div>
+<!-- dshea-include END include/footer.html ***************** -->
+
+<script src="include/navscript.js" type="text/javascript"></script>
+
+</body>
+</html>
