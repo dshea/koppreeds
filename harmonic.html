@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+<title>Kopp Reeds - The Not-Quite-Harmonic Overblowing of the Bassoon</title>
+
+<!-- dshea-include BEGIN include/header.html ***************** -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="main.css" type="text/css">
+<!-- dshea-include END include/header.html ***************** -->
+
+<body>
+
+<!-- dshea-include BEGIN include/nav.html ***************** -->
+<nav class="w3-sidebar w3-blue-grey w3-collapse w3-top w3-large w3-padding-small" style="z-index:3;width:225px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-24"><b>Kopp Reeds</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a id="homeMenu" href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a id="myBtn" href="javascript:void(0)" onclick="myAccFunc()" class="w3-bar-item w3-button w3-hover-white">
+    Reeds <i class="fa fa-caret-down"></i></a> 
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-small w3-medium">
+      <a href="modern.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Modern Bassoon</a>
+      <a href="french.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">French Bassoon</a>
+      <a href="contra.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contra Bassoon</a>
+      <a href="bassDulcian.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Bass Dulcian</a>
+      <a href="baroque.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Baroque Bassoon</a>
+      <a href="classical.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Classical Bassoon</a>
+    </div>
+    <a href="store.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Store</a> 
+    <a href="customers.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Customers Speak</a> 
+    <a href="lessons.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Lessons</a> 
+    <a href="publications.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Publications</a> 
+    <a href="tradingPost.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Jim's Trading Post</a>
+    <a href="links.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Links</a>
+    <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact Us</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-blue-grey w3-xlarge w3-padding-small">
+  <a href="javascript:void(0)" class="w3-button w3-blue-grey w3-margin-right" onclick="w3_open()">&#9776;</a>
+  <span>Kopp Reeds</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close();" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<!-- dshea-include END include/nav.html ***************** -->
+
+
+
+<!-- PAGE CONTENT -->
+<div id="beginning" class="w3-main" style="margin-left:250px;margin-right:25px">
+
+  <div class="w3-container" style="margin-top:80px">
+		<h1 class="w3-xxlarge w3-text-blue-grey"><b>The Not-Quite-Harmonic Overblowing of the Bassoon</b></h1>
+  	<hr style="width:50px;border:5px solid grey" class="w3-round">
+  </div>
+
+  <div class="w3-container">
+
+    <p align="center"><font size="+1">By James B. Kopp</font></p>
+    <p align="center">James Kopp &amp; Associates</p>
+    
+    <ol>
+      <p>&nbsp;</p>
+      <li><a href="#section1"><strong><font size="+1">The full system: bassoon, reed, 
+        and player</font></strong></a></li>
+      <li><font size="+1"><strong><a href="#section2">What resonances are available?</a></strong></font></li>
+      <li><strong><font size="+1"><a href="#section3">The bassoon&#8217;s in-tune 
+        second mode: how can this be?</a> </font></strong></li>
+      <li><strong><font size="+1"><a href="#section4">The first and second modes of 
+        response</a></font></strong></li>
+      <li><strong><font size="+1"><a href="#section5">Effects of the stretched resonance 
+        curve: Third and higher modes of the bassoon</a></font></strong></li>
+      <li><strong><font size="+1"><a href="#section6">Modal analysis of selected fingerings 
+        for modern bassoon</a></font></strong></li>
+      <li><strong><font size="+1"><a href="#section7">End Notes</a></font></strong><br>
+      </li>
+    </ol>
+    <p align="left">The fingering patterns of the bassoon&#8217;s upper register are 
+      based on a characteristic of its bore called the pipe resonances. Acoustic physicists 
+      have studied the pipe resonances of the Heckel- or German-system bassoon in 
+      combination with the bocal, which is in fact the upper part of the bore. In 
+      these investigations, the other components of the full acoustical system of 
+      the bassoon &#8211; the reed and the player &#8211; are purposely ignored for 
+      study purposes.<a href="#note1"><font size="-1"><em>1</em></font></a> (We will 
+      compare the full-system resonances later in this article, however.) The pipe 
+      resonances of the bassoon (hereafter understood to include the bocal) are important 
+      to the performing bassoonist as the root cause of the seemingly arbitrary fingerings 
+      in the upper register (that is, Eb4 and higher, plus a few alternate fingerings 
+      at lower pitches). (See fig.1 for an explanation of pitch names.) </p>
+    <p align="center"><img src="images/harmonic/Fig1.gif" width="558" height="158"> </p>
+    <p align="center"><em>Figure 1. Explanation of pitch names, based on terminology 
+      of the Acoustical Society of America.</em> </p>
+    <p>A pipe open at one end will resonate when blown. If, for example, we blow across 
+      the open end of an empty soda bottle, a fundamental pitch is produced. An increase 
+      in blowing pressure will result in a higher &#8220;overblown&#8221; pitch. These 
+      are the pipe resonances of the bottle cavity. If the bottle&#8217;s resonant 
+      cavity is gradually reduced in size by partly filling it with water, the pitch 
+      will rise.<a href="#note2"><font size="-1"><em>2</em></font></a> This reduction 
+      is analogous to shortening the bassoon&#8217;s air column (pipe) by opening 
+      tone holes to raise the pitch from Bb1 to F3 (open F). </p>
+    <p>A pipe in the shape of a perfect cone will overblow harmonically &#8211; it 
+      will produce an array of pipe resonances related to one another by a harmonic 
+      ratio. That is, the higher resonance peaks (overtones) will be related to the 
+      lowest peak (the fundamental) by whole-number ratios of frequency. Thus the 
+      second peak (double the first peak&#8217;s frequency) will lie a perfect octave 
+      above the first, the third peak (triple the first peak&#8217;s frequency) will 
+      lie a perfect twelfth above the first, etc.<a href="#note3"><font size="-1"><em>3</em></font></a> 
+      This, roughly speaking, is how F#3 and higher pitches are produced on the bassoon. 
+    </p>
+    <p>So far, so good, but the complications start now. The bassoon&#8217;s bore 
+      is an imperfect cone in two respects. First, the cone is truncated (shortened) 
+      at the small end, the reed substituting for the missing portion. Second, there 
+      are many local perturbances (changes of slope) in the cone purposely introduced 
+      by bassoon makers, the results of experiments to improve the tuning and tone 
+      quality of the instrument.<a href="#note4"><font size="-1"><em>4</em></font></a> 
+      As a result of these two sorts of imperfections, the pipe resonances of the 
+      bassoon bore do not lie in a true harmonic relationship. Instead, the ratio 
+      is slightly stretched, meaning that the ratio of each successive higher peak 
+      increases by more than 1.0. Backus found that pipe resonances for C3 and C4 
+      on the bassoon, for example, lay in a ratio of 1: 2.07 rather than a true harmonic 
+      ratio of 1: 2.00.<a href="#note5"><font size="-1"><em>5</em></font></a> </p>
+    <p>This stretching affects the intervals at which a bassoon fingering (in other 
+      words, a pipe segment) can &#8211; after certain modifications &#8211; be made 
+      to overblow. These overblown pitches, based on overtones (upper resonances) 
+      of certain fingerings, are called the higher modal responses (or simply the 
+      higher modes) of the bassoon. Fig. 2 shows the modal responses most commonly 
+      used to produce the bassoon&#8217;s range.</p>
+    <p align="center"><img src="images/harmonic/Fig2.gif" width="844" height="194"></p>
+    <p align="center"><em>Figure 2. Pipe-resonance modes commonly used for standard 
+      bassoon fingerings.</em></p>
+    <p>Sometimes a given pitch of the bassoon can be obtained by use of either of 
+      two modes (requiring two different fingerings, of course). The standard fingering 
+      of C#4, for example, is a second-mode response, while the long fingering for 
+      the same pitch is a third-mode response. The higher a given pitch, the greater 
+      the chance that it can be produced in more than one mode. In this sense, mode 
+      is not quite synonymous with &#8220;register.&#8221; </p>
+    <p>Certain first-mode fingerings &#8211; F2 through D3 &#8211; are the bases or 
+      ancestors, as Benade called them, of common higher-mode fingerings.<a href="#note6"><font size="-1"><em>6</em></font></a> 
+      The third, fourth, and fifth modes of these ancestors are increasingly stretched 
+      in frequency. The third mode (normally employed for Eb4 to A4) response is roughly 
+      one semitone sharp of a harmonic ratio. The fourth mode (normally employed for 
+      Bb4 through Eb5) response is one to two semitones sharp of a harmonic ratio. 
+      The fifth mode, employed for so-called &#8220;harmonic&#8221; E5 (fingered without 
+      use of a high E key) and above is, ironically, still further sharp of a harmonic 
+      ratio. (We will postpone detailed discussion of higher-mode fingerings to the 
+      appendix of this article. The reader with little appetite for the underlying 
+      theory of these fingerings may wish to skip ahead.) </p>
+    <p>One curiosity of the bassoon&#8217;s fingering technique is that the second 
+      mode pitches (normally used for F#3 through D4) sound essentially in tune, despite 
+      the stretched ratios of the pipe resonances. This welcome exception to the stretching 
+      rule allows second-mode fingerings on the bassoon to be closely parallel to 
+      their first-mode ancestors. Possible explanations for the exception are offered 
+      below. <br>
+      <a href="#top">[Top] </a></p>
+    <p><strong><font size="+1"><a name="section1"></a>1. The full system: bassoon, 
+      reed, and player </font></strong><br>
+      Pipe resonances leave their imprint on the bassoon&#8217;s performance technique 
+      (in the derivations of upper-mode fingerings), while the reed and the player, 
+      when added to complete the system, give rise to other important acoustical characteristics. 
+      At this point in our discussion, words can become treacherous. For clarity, 
+      we will begin to speak of both (1) pipe resonances and (2) full-system resonances, 
+      which include the contributions of the reed and the player&#8217;s vocal tract. 
+      Full-system resonances are the musical sounds that bassoonists produce and listeners 
+      experience. </p>
+    <p>The audible spectrum of any full-system resonance of the bassoon is harmonic 
+      in character; its overtones will have whole-number ratios to the fundamental.<a href="#note7"><font size="-1"><em>7</em></font></a> 
+      This remains true even if the fundamental is itself a non-harmonic upper mode 
+      of a given pipe resonance (and fingering). A concrete example will help to clarify 
+      this cumbersome statement of an important fact. The full-system spectrum of 
+      Eb4 will include, besides the fundamental Eb4 (311 Hz), higher resonance peaks 
+      (overtones) at Eb5 (2 x 311 = 622 Hz), Bb5 (3 x 311 = 932 Hz), Eb6 (4 x 311 
+      = 1,244 Hz), G6 (5 x 311 = 1,568 Hz), Bb6 (6 x 311 = 1,864 Hz), etc.<a href="#note8"><font size="-1"><em>8</em></font></a> 
+      It is a separate issue that the fundamental (Eb4) originates as a third-mode 
+      pipe resonance of G2 (98 Hz). The frequency ratio of Eb4 to G2 is 311:98, or 
+      3.17, a semitone above the true harmonic ratio of 3.00.<a href="#note9"><font size="-1"><em>9</em></font></a> 
+      Thus it sounds as an augmented (stretched) twelfth above G2, not a perfect (harmonic) 
+      twelfth. </p>
+    <p>Let&#8217;s talk for a moment about tone quality (timbre). If a player attempts 
+      to sound the same pitch at the same volume on the same bassoon using (a) a &#8220;bright&#8221; 
+      reed, and then using (b) a &#8220;dark&#8221; reed, the resulting timbre will 
+      differ. The difference heard by the listener will be due to the varied strengths 
+      of the respective full-system resonance peaks (fundamental and overtones) between 
+      one reed and the other. In other words, the amplitudes (strengths) of the respective 
+      resonance peaks will vary between two reeds, even though their frequencies remain 
+      unchanged. (This assumes that the two reeds play in tune with one another). 
+      Likewise, if two players &#8211; an expert (c) and then a beginner (d), let 
+      us say &#8211; sound the same pitch at the same volume on the same instrument 
+      and reed, the audible results will again differ. The amplitudes of the resonance 
+      peaks will of course differ, but this time the differences will stem from the 
+      players&#8217; differently shaped vocal tracts (we include under this term the 
+      entire embouchure and breathing mechanism). Finally, we can obtain a slight 
+      contrast in timbre by having one player repeat the exercise using the same reed, 
+      but two different bassoons (e and f). </p>
+    <p>We can draw a useful conclusion from this exercise: variations in strengths 
+      of resonance peaks (differences in timbre) can arise from qualities of the reed 
+      (<em>a versus b</em>), from qualities of the player&#8217;s vocal tract (<em>c 
+      versus d</em>), or from qualities of the pipe itself (<em>e versus f</em>). 
+      Now we are in a position to examine a second influence of the pipe&#8217;s resonances 
+      on the full-system resonances the player obtains. <br>
+      <a href="#top">[Top] </a> </p>
+    <p><font size="+1"><strong><a name="section2"></a>2. What resonances are available? 
+      </strong></font><br>
+      Fig. 3a shows the pipe resonances for Bb1. The numerals and markers below the 
+      horizontal line are located at intervals of true harmonic ratios. The markers 
+      above the line are, in contrast, aligned with the pipe-resonance peaks. We can 
+      see that the pipe-resonance peaks do not align well with the harmonic ratio 
+      markers. The higher pipe resonances of the bassoon grow increasingly sharp, 
+      to an extent that that the eleventh pipe-resonance peak (non-harmonic) essentially 
+      coincides with the twelfth full-system resonance peak (harmonic).<a href="#note10"><font size="-1"><em>10</em></font></a> 
+      The acoustical result of this coincidence is that the eleventh pipe-resonance 
+      peak reinforces the twelfth full-system resonance, while the second through 
+      tenth pipe resonance peaks offer less, or little, or even no reinforcement to 
+      other full-system resonances. </p>
+    <p align="center"><img src="images/harmonic/Fig3.gif" width="840" height="426"></p>
+    <p align="center"><em>Figure 3a. Pipe resonance peaks for Bb1, lowest note of 
+      the bassoon. (Experimental conditions cause the fundamental to register sharp 
+      of the sounding pitch of 58 Hz.) Markers for the peak frequencies (atop the 
+      legend line) are increasingly sharp to the harmonic ratios (spaced below the 
+      legend line, with numbers). In fact, the eleventh resonance peak coincides with 
+      the harmonic ratio of twelve. After Backus 1977.</em></p>
+    <p align="center"><img src="images/harmonic/Fig3b.gif" width="840" height="338"></p>
+    <p align="center"><em>Figure 3b. Full-system resonance peaks for Bb1, the lowest 
+      note of the bassoon. When the reed and player are added to the system, peaks 
+      are located at true harmonic intervals. Graph by Leslie Ross.</em></p>
+    <p>As fig. 3a shows, the seventh harmonic of Bb1 is most poorly aligned with any 
+      pipe-resonance peak, followed by the sixth and eighth harmonics, followed by 
+      the fifth and ninth harmonics. The fourth and tenth harmonics show partial alignment 
+      with certain pipe-resonance peaks, while the second, third, and eleventh show 
+      substantial alignment. This extensive alignment of resonance peaks with harmonic 
+      ratios at relatively low frequencies is why Bb1 is noticeably rich in overtones. 
+    </p>
+    <p>But such is not always the case. Backus gave striking examples of how little 
+      the pipe sometimes contributes to the full-system resonance of some tones: </p>
+    <blockquote> 
+      <p>For the note F3, just before the break [open F, highest note of the first 
+        mode], there is only one strong resonance, giving the fundamental; the resonance 
+        curve for this note is shown in Fig. [4a]. As can be seen from this curve 
+        all of the higher resonances are small, and their frequencies do not coincide 
+        with the harmonic frequencies [that is, the resonance frequencies are sharp]....</p>
+    </blockquote>
+    <p align="left">(See fig. 4a.) This is the main reason why open F sounds thin 
+      in timbre, compared to some lower notes.</p>
+    <p align="center"><img src="images/harmonic/Fig4a.gif" width="828" height="404"></p>
+    <p align="center"><em>Figure 4a. Pipe resonance peaks for F3 (open F). (Experimental 
+      conditions cause the fundamental to register slightly sharp of the sounding 
+      pitch of 175 Hz.) Only one strong resonance peak, the fundamental, coincides 
+      with a harmonic ratio. After Backus 1977.</em></p>
+    <p align="center"><img src="images/harmonic/Fig4b.gif" width="828" height="350"></p>
+    <p align="center"><em>Figure 4b. Full-system resonance peaks for F3. When the 
+      reed and player are added to the system, peaks are located at true harmonic 
+      intervals. Graph by Leslie Ross.</em></p>
+    <p>Backus continued: </p>
+    <blockquote> 
+      <p>The second resonance is used for the notes up through D 4. The next note 
+        Eb4 is obtained by cross fingering; the vent hole thus provided reduces the 
+        heights of the first two resonances and encourages the instrument to vibrate 
+        on the third resonance [of the pipe] .... [See fig. 5a.] There are no resonances 
+        so placed as to reinforce the higher harmonics. This is typical of the highest 
+        notes on the instrument; if a resonance coincides with a harmonic above the 
+        fundamental, it does so only by chance.<a href="#note11"><font size="-1"><em>11</em></font></a></p>
+    </blockquote>
+    <p align="center"><img src="images/harmonic/Fig5a.gif" width="830" height="488"><br>
+      <em>Figure 5a. The third peak from the left, marked 1, is the pipe resonance 
+      that the bassoon bore contributes to the sounding pitch Eb4. (Experimental conditions 
+      cause the fundamental to register sharp of the sounding pitch of 311 Hz.) No 
+      strong pipe resonances align with the harmonic ratios of Eb4 (marked as 2 and 
+      3). After Backus 1977. </em></p>
+    <p align="center"><img src="images/harmonic/Fig5b.gif" width="830" height="360"></p>
+    <p align="center"><em>Figure 5b. Full-system resonance peaks for Eb4. When the 
+      reed and player are added to the system, peaks are located at true harmonic 
+      intervals. Graph by Leslie Ross.</em></p>
+    <p><br>
+      We may pursue Backus&#8217;s thought a little further to a useful conclusion. 
+      The bassoon is played using its first five modes. Within these bounds, we may 
+      say that the higher the mode number, the weaker the reinforcement of lower harmonics 
+      by the pipe resonances will be. (Recall the progressively greater misalignment 
+      of lower harmonics with the pipe-resonance peaks of Bb1.) In this sense, the 
+      stretching of the pipe-resonance frequency ratio is directly responsible for 
+      the thinner timbre in the bassoon&#8217;s upper modes. </p>
+    <p>Now let&#8217;s compare the corresponding graphs of full-system resonances. 
+      (See figs. 3b, 4b, 5b.) For each of the three notes graphed by Backus, we now 
+      see an array of many strong resonances, each peak lying at a predictable, harmonic 
+      ratio from the fundamental. If not from the pipe, where do these second and 
+      higher peaks come from? The answer is, they come from the other components of 
+      the bassoon&#8217;s acoustic system &#8211; the reed and the player. Both the 
+      reed and the player&#8217;s vocal tract have a wide range of resonances available 
+      to contribute to the system. For any sounding pitch, some of these resonances 
+      enter into systematic collaboration with the pipe to produce a musical tone, 
+      and the result is what acoustic physicists call a regime of oscillation. </p>
+    <p>The regime is less tidy than the picture sometimes painted for pedagogical 
+      purposes. It resembles to some extent an invisible game of musical chairs, in 
+      particular one where the rules have been altered. In this altered game, which 
+      we might call &#8220;harmonic chairs,&#8221; the chairs are arranged in a pattern 
+      of harmonic relationships, although the absolute pitch levels are not predetermined. 
+      After a fingering is chosen and the music starts (remember, the rules have been 
+      altered), all available resonances scramble to find chairs. The strongest and 
+      most harmonically attractive resonances that are available grab seats in a few 
+      milliseconds, and the absolute pitches settle at whatever is the most stable 
+      regime of oscillation. (It&#8217;s helpful to note that resonance peaks often 
+      have broad bases covering a range of frequencies on either side of the peak 
+      itself, as shown in figures 4b and 5b. Thus there is often some negotiability 
+      in setting up the regime of oscillation. But the further off-peak, the weaker 
+      the resulting harmonic will be.) </p>
+    <p>This does not necessarily mean that the lowest resonance gets the most comfortable 
+      chair; it may be forced into a chair that&#8217;s a little sharper or flatter 
+      than it would prefer. If the lowest available resonance is harmonically unrelated, 
+      it will get no chair at all. In other words, it (like other available resonances) 
+      may not participate in a particular regime of oscillation. But once the player 
+      changes to a different fingering, it&#8217;s time for a new regime of oscillation 
+      and a new game of harmonic chairs.<a href="#note12"><font size="-1"><em>12</em></font></a> 
+    </p>
+    <p>As a participant in these regimes, a superior instrument, reed, or player will 
+      make its/his/her excellence felt. Totally aside from the stretched ratio we 
+      discussed above, the further alignment of pipe resonances in individual bassoons 
+      can range from excellent to poor, giving rise to a corresponding range of tonal 
+      beauty, or lack thereof. The &#8220;best&#8221; bassoon for a player will be 
+      the one that, through well-aligned resonances and maximum flexibility, makes 
+      the largest contributions to the hundreds or thousands of different regimes 
+      that must arise during the performance of a musical work. Much the same is true 
+      for the &#8220;best&#8221; reed, which has to contribute a range of appropriate 
+      resonances even while its shape and size are changed by vibrations and by the 
+      player&#8217;s embouchure. Different players will contribute different resonances 
+      according to the differing shapes of their vocal tracts. But this is neither 
+      the only edge the superior player can have, nor the most important one. Audibly 
+      superior tone results when a player is able &#8211; consciously or unconsciously 
+      &#8211; to adjust his/her embouchure for stronger resonance, and for a broader 
+      range of resonant frequencies, the better to accommodate the exact pitch required 
+      by an ensemble at a given moment. The superior player can optimize resonance 
+      at extreme dynamic levels, at quick speeds of execution and, at times, while 
+      in the throes of muscle fatigue. A &#8220;great sound&#8221; on the bassoon 
+      is always achieved through a strong regime of oscillation. <br>
+      <a href="#top">[Top] </a> </p>
+    <p><strong><font size="+1"><a name="section3"></a>3. The bassoon&#8217;s in-tune 
+      second mode: how can this be? </font></strong><br>
+      We noted earlier that the bassoon&#8217;s full-system, second-mode response 
+      is essentially in tune &#8211; it overblows at a harmonic ratio of 2:1. How 
+      does this happen, given that the pipe resonances are stretched? Part of the 
+      answer lies in the small degree of stretching that would be expected in the 
+      second mode. Given that the bassoon&#8217;s third- mode response is one semitone 
+      sharp of harmonic, we might suppose that the second-mode stretching would be 
+      less. Backus&#8217;s findings support this guess.<a href="#note13"><font size="-1"><em>13</em></font></a> 
+    </p>
+    <p>A second part of the answer may result from a trait of any woodwind&#8217;s 
+      acoustical system called the cutoff frequency. The cutoff is a frequency above 
+      which all the tone holes left open in a given fingering begin to participate 
+      in the standing wave (the basic musical vibration of the bassoon or other woodwind). 
+      This sounds at first like a rather remote concern to the performing bassoonist, 
+      but such is not the case. What&#8217;s significant is that the full-system resonances 
+      are boosted in strength &#8211; but lowered in frequency &#8211; in the proportion 
+      by which they exceed cutoff frequency. This is because higher-frequency vibrations, 
+      being increasingly shorter in wavelength, are more and more able to reach into 
+      the open tone holes. Thus the open tone holes increasingly become part of the 
+      vibrating air column. </p>
+    <p>Experts sometimes describe the bassoon&#8217;s cutoff frequency as a range, 
+      and other times as a single frequency. It has been reported as broadly as &#8220;300 
+      Hz to 600 Hz&#8221; (that is about D4 to D5) or as narrowly as &#8220;about 
+      400 Hz&#8221; (a little above G4 = 392 Hz).<a href="#note14"><font size="-1"><em>14</em></font></a> 
+      Under any of these interpretations, however, the general effects are not in 
+      question. In the following discussion, we will assume that cutoff frequency 
+      is around 400 Hz. </p>
+    <p>The higher the vibration frequency lies above cutoff, the more completely the 
+      &#8220;tails&#8221; of the air column reach into the open tone holes. As they 
+      do so, the volume of the tone holes is added to the main bore volume, and the 
+      bore is effectively enlarged. This enlargement results, as might be expected, 
+      in a flattening of the higher overtones, as compared to the fundamental. The 
+      spectrum of the full-system peaks is therefore described as compressed. This 
+      compression of the resonance frequencies above cutoff can flatten an entire 
+      regime of oscillation.<a href="#note15"><font size="-1"><em>15</em></font></a> 
+    </p>
+    <p>With these unquestioned aspects of the bassoon&#8217;s acoustical behavior 
+      in mind, we can now put forth an educated guess about the intonation of the 
+      bassoon&#8217;s second mode. It may not be mere coincidence that virtually all 
+      the overtones of the bassoon&#8217;s second- and higher-mode tones lie above 
+      cutoff (whereas Bb1, in contrast, has five overtones below cutoff). The frequency 
+      compression of the full system&#8217;s overtones above cutoff may help to balance 
+      the stretching of the pipe resonances, as the sharp fundamentals of the second-mode 
+      pipe resonances are lowered in regimes of oscillation dominated by flattened 
+      overtones. In time, acoustics researchers may devise experiments to test this 
+      hypothesis. </p>
+    <p>We&#8217;ve been speaking of the bassoon&#8217;s second mode as if it were 
+      perfectly in tune. For some fortunate players and/or instruments, this is true. 
+      It is not uncommon, however, for the exact pitch and/or resonance of the notes 
+      A3, Bb3, B3, C4 and D4 to require tweaking through bocal choice, reed design, 
+      or the player&#8217;s embouchure.<a href="#note16"><font size="-1"><em>16</em></font></a> 
+      Some players resort to more elaborate fingerings, such as holding open a secondary 
+      speaker (&#8220;flick&#8221;) key, etc. Meanwhile, C#4 is also flat on some 
+      bassoons. A common remedy is the use of well-known &#8220;long&#8221; or &#8220;full&#8221; 
+      fingerings, which raise the pitch (by a shift into third mode). This well-known 
+      range of remedies suggests that a precisely harmonic second mode is not a given, 
+      even when the corresponding first-mode pitches are well in tune. The problem 
+      may result from imprecise bore perturbations (sometimes including a poorly chosen 
+      bocal), from more-than-optimal compression of overtones above cutoff (as described 
+      above) in some individual bassoons, or from still other factors.<a href="#note17"><font size="-1"><em>17</em></font></a> 
+      <br>
+      <a href="#top">[Top] </a> </p>
+    <p><strong><font size="+1">APPENDIX: MODE AND ANCESTRY IN BASSOON FINGERINGS</font></strong></p>
+    <p><strong><font size="+1"><a name="section4"></a>4. The first and second modes 
+      of response </font></strong><br>
+      The lowest 19 semitones of the bassoon&#8217;s scale (Bb1 through F3) are obtained 
+      as fundamentals of a gradually shortened pipe. (We are speaking here of the 
+      modern Heckel or German system, including whisper key.) The higher pitches are 
+      obtained by overblowing &#8211; by inhibiting production of the pipe&#8217;s 
+      lower resonance(s), so that a higher resonance is heard as the sounding pitch. 
+      This is accomplished by altering the frequency of the first- mode peak so that 
+      it no longer fits into the harmonic regime of oscillation.<a href="#note18"><font size="-1"><em>18 
+      </em></font></a>As bassoonists know, the second mode (or register) is produced 
+      as octaves of the first mode. Benade referred to such first-mode fingerings, 
+      the bases of higher-mode fingerings, as ancestors.<a href="#note19"><font size="-1"><em>19</em></font></a> 
+    </p>
+    <p>Small differences separate second-mode fingerings from their ancestors. To 
+      produce F#3, we partially open the first finger hole. This makes the upper octave 
+      speak securely, but it also has a side effect: it slightly sharpens the pitch. 
+      A brief experiment will clarify this: attack and sustain F#3 while gradually 
+      closing the half hole. Its volume will diminish, and the pitch will sag. If 
+      we repeat the experiment with a simple fingering for G3 (/xx xxx), we get a 
+      similar result. But if we then add the Eb key (a common remedy for a sharp G3), 
+      we find that the size of the &#8220;half-hole&#8221; opening matters little.<a href="#note20"><font size="-1"><em>20</em></font></a> 
+    </p>
+    <p>The register-key vent, in contrast to use of a half-hole, does not cause appreciable 
+      sharpening. Backus&#8217;s explanation for the clarinet&#8217;s register-key 
+      vent is also valid for the bassoon&#8217;s whisper-key vent: </p>
+    <blockquote> 
+      <p>This hole essentially destroys the lowest resonance.... The lowest resonance 
+        moves from its position as shown by the solid line ... to that shown by the 
+        dotted line when the vent-hole is opened; the remaining higher resonances 
+        are essentially unchanged.)<a href="#note21"><font size="-1"><em>21</em></font></a> 
+        [See fig. 6.] </p>
+    </blockquote>
+    <p>After the frequency of the lowest resonance has been shifted, the lowest resonance 
+      is unable to participate in the regime of oscillation. The regime is instead 
+      based on the next-higher mode, the bassoon&#8217;s second or the clarinet&#8217;s 
+      third.</p>
+    <p align="center"><img src="images/harmonic/Fig6.gif" width="572" height="310"></p>
+    <p align="center"><em>Figure 6. Effect of the register key. The dotted line shows 
+      the shifted frequency of the lowest resonance after the vent-hole has been opened. 
+      This graph, after Backus 1977, is for clarinet, but the effect of the bassoon&#8217;s 
+      whisper key is comparable.</em></p>
+    <p><a href="#top">[Top] </a></p>
+    <p><br>
+      <strong><font size="+1"><a name="section5"></a>5. Effects of the stretched resonance 
+      curve: Third and higher modes of the bassoon </font></strong><br>
+      It&#8217;s not hard to recognize relationships between second-mode fingerings 
+      of the bassoon and their first-mode ancestors. Bassoonists who double on clarinet 
+      have no doubt grasped the ancestral relationship between some of the clarinet&#8217;s 
+      third-mode fingerings (written B4 to C5) and their first-mode ancestors (written 
+      E3 to G2). But fingerings for the bassoon&#8217;s third mode (Eb4 through A4) 
+      are less obviously related to their ancestors.<a href="#note22"><font size="-1"><em>22</em></font></a> 
+      The root cause of the obscurity is the stretched resonance curve of the bassoon&#8217;s 
+      pipe resonances, as discussed above. Because of this stretching, standard bassoon 
+      fingerings have to be based on an odd-looking but right-sounding interval. Even 
+      under this &#8220;offset&#8221; scheme, ancestral relationships are further 
+      obscured, at first glance, by the opening of various tone holes as cross-finger 
+      vents. At second glance, however, the siting of these cross-finger vents in 
+      fact follows roughly predictable patterns. Each new cross-finger vent in the 
+      table is incrementally higher, tracing in miniature the rise of the sounding 
+      pitches. After a simple pattern in mode 2, a new pattern is initiated in modes 
+      3 and 4. (See fig. 7.) <br>
+    </p>
+    <p align="left"><img src="images/harmonic/Fig7a.gif" width="826" height="312"></p>
+    <p align="left"><img src="images/harmonic/Fig7b.gif" width="830" height="1216"></p>
+    <p align="left"><img src="images/harmonic/Fig7c.gif" width="830" height="398"></p>
+    <p align="center"><em>Figure 7. Pattern of cross-finger vents on bassoon. Both 
+      the fingerings and their representation are based on the Bassoon- Family Fingering 
+      Companion by Terry B. Ewell and Lisa Hoyt, online at http://www.idrs.org/bsnfing/fingnote.htm.</em> 
+    </p>
+    <p>The opening of cross-finger vents often has the additional effect of further 
+      sharpening an already sharper- than-harmonic, third- or fourth-mode resonance. 
+      The resulting sharpness is sometimes negligible, but at other times it is a 
+      matter of a semitone. For fine-tuning of these and other intonation problems, 
+      tone holes (often much further down the bore) are closed or opened. Still other 
+      tone holes may be closed to enhance resonance. Examples include the addition 
+      of the F key to the pitch G3 and the addition of the Eb key to the pitches E4 
+      through A4. These fingering needs make ancestral relationships still harder 
+      to discern. (See fig. 8.) </p>
+    <p align="center"><img src="images/harmonic/Fig8.gif" width="826" height="248"></p>
+    <p><a href="#top">[Top] </a></p>
+    <p><strong><font size="+1"><a name="section6"></a>6. Modal analysis of selected 
+      fingerings for modern bassoon </font></strong><br>
+      Third-mode response of the bassoon is one semitone sharp of a harmonic ratio, 
+      after sharpness due to cross-finger venting is included. Eb3 marks the lowest 
+      standard fingering of the third mode, but some lower alternate fingerings from 
+      the mode are frequently employed, including the long C4.<a href="#note23"><font size="-1"><em>23</em></font></a> 
+      Ancestor fingerings from F2 to C3 produce C4 through A4. (See fig. 9.) <br>
+    </p>
+    <p><img src="images/harmonic/Fig9a.gif" width="830" height="190"></p>
+    <p> <img src="images/harmonic/Fig9b.gif" width="834" height="796"></p>
+    <p align="center"><em>Figure 9. Ancestors of third-mode fingerings. The left column 
+      shows selected standard third-mode fingerings; the right column shows the relevant 
+      first-mode ancestor fingerings. &#8220;+ twelfth&#8221; denotes the interval 
+      of an augmented twelfth; &#8220;++ twelfth&#8221; denotes the interval of a 
+      double-augmented twelfth. Fingerings based on Ewell and Hoyt.</em> </p>
+    <p>Fourth mode is based on a narrower range of ancestors &#8211; from A2 to C#3. 
+      B4 and B4 are one semitone sharp of a harmonic ratio, while C5 and higher are 
+      two semitones sharp. (Again, part of this sharpness is due to the sharpening 
+      effects of some cross-finger vents.) (See fig. 10.) The fourth mode traditionally 
+      extends through &#8220;harmonic&#8221; D#5. However, certain left-hand keys, 
+      if present, may be used to obtain a different D#5, and even E5 and F5, all of 
+      these being sharpened versions of the D5 fingering. Fingered thus, all of these 
+      are in fourth mode. </p>
+    <p><img src="images/harmonic/Fig10.gif" width="830" height="164"></p>
+    <p><img src="images/harmonic/Fig10b.gif" width="834" height="588"></p>
+    <p align="center"><em>Figure 10. Ancestors of fourth-mode fingerings. The left 
+      column shows selected standard fourth-mode fingerings; the right column shows 
+      the relevant first-mode ancestor fingerings. &#8220;+ twelfth&#8221; denotes 
+      the interval of an augmented twelfth; &#8220;++ twelfth&#8221; denotes the interval 
+      of a double-augmented twelfth. Fingerings based on Ewell and Hoyt.</em></p>
+    <p>The bassoon&#8217;s fifth mode begins at &#8220;harmonic&#8221; E5, using fingerings 
+      that may be consulted on the web site http://www.idrs.org/bsnfing/fingnote.htm. 
+      The numerous available fingerings for the fifth mode are more difficult to analyze 
+      with certainty, due to increasing complications and the increasing sharpness 
+      of the ancestral resonance peaks. For example, is E5 the quadruple-augmented 
+      seventeenth of G2, as one fingering would imply? Or is it the triple-augmented 
+      seventeenth of G2, as another fingering would imply? (See fig. 11.) </p>
+    <p><img src="images/harmonic/Fig11.gif" width="830" height="254"></p>
+    <p align="center"><em>Figure 11. Two fifth-mode fingerings for E5. These two sample 
+      fingerings show that a single pitch can have fingerings based on different ancestors, 
+      even within the same mode. Fingerings based on Ewell. </em></p>
+    <p>At the borders between modes, a relatively open lower-mode fingering will be 
+      neighbor to a relatively closed higher-mode fingering. During an ascending slur 
+      to the higher mode, a mildly percussive white noise is an audible clue that 
+      mode shifting is at work. This rough transition makes for some crunchy trills 
+      between such neighbors as F3/F#3, D4/Eb4, A4/ Bb4, and &#8220;harmonic&#8221; 
+      D#5/E5. </p>
+    <p>Mode shifts also make for treacherous longer slurs, especially slurs downward 
+      to a lower mode. A bassoon passage in the Tchaikovsky Fifth Symphony, third 
+      movement, provides a well-known example. (See fig. 12.) Four downward slurs 
+      between third- and second-mode pitches precede a second- to first-mode slur. 
+      In the absence of a tongued articulation, the player often uses a speaker key 
+      to assure the mode shift. The player may also use the embouchure, wind velocity, 
+      and well-designed, flexible reeds to help minimize this difficulty. </p>
+    <p align="center"><img src="images/harmonic/Fig12.gif" width="824" height="218"></p>
+    <p align="center"><em>Figure 12. Slurs between modes. The numerals in the fourth 
+      through seventh measures indicate the modes of the respective fingerings. This 
+      excerpt is from Tchaikovsky, Symphony 5, third movement.</em></p>
+    <p>The structural sharpness of higher-mode responses of the bassoon is seldom 
+      questioned by its long-suffering players, who patiently learn the bizarre-looking 
+      fingerings by rote. It may provide some practical guidance, however, and it 
+      certainly provides some moral support, to know that there is a method to the 
+      seeming madness of these fingerings.</p>
+    <p><a href="#top">[Top]</a></p>
+    <p><br>
+      <strong>REFERENCES </strong><br>
+      Backus 1974. John Backus, &#8220;Input Impedance Curves for the Reed Woodwind 
+      Instruments.&#8221; <em>Journal of the Acoustical Society of America</em> 56/4 
+      (October), 1266-79. </p>
+    <p>Backus 1977. John Backus, <em>The Acoustical Foundations of Music</em>, second. 
+      ed. New York: Norton. </p>
+    <p>Baines 1991. Anthony Baines, <em>Woodwind Instruments and their History</em>, 
+      third ed. New York: Dover. </p>
+    <p>Benade 1960. Arthur H. Benade, <em>Horns, Strings &amp; Harmony</em>. Garden 
+      City, New York: Anchor Books (Doubleday). </p>
+    <p>Benade 1990. Arthur H. Benade, <em>Fundamentals of Musical Acoustics</em>, 
+      second, rev. ed. New York: Dover. </p>
+    <p>Corey 1980. Gerald E. Corey, &#8220;How to Improve your Tuning on the Bassoon,&#8221;<em> 
+      Journal of the International Double Reed Society</em> 8, 28-34. </p>
+    <p>Cronin 1996. Robert H. Cronin, &#8220;Understanding the Operation of Auxiliary 
+      Fingerings on the Modern Bassoon,&#8221; <em>Journal of the International Double 
+      Reed Society</em> 24, 23-30. </p>
+    <p>Fletcher and Rossing 1991. Neville H. Fletcher and Thomas D. Rossing, <em>The 
+      Physics of Musical Instruments</em>. New York: Springer. </p>
+    <p>Nederveen 1998. C. J. Nederveen, <em>Acoustical Aspects of Woodwind Instruments</em>, 
+      revised ed. DeKalb, Illinois: Northern Illinois University Press. </p>
+    <p><strong>ACKOWLEDGEMENTS </strong><br>
+      I would like to thank <strong>Frank A. Morelli</strong> and <strong>C. J. Nederveen</strong>, 
+      who read this article in draft and made numerous useful suggestions. I would 
+      also like to thank <strong>Leslie Ross</strong>, who recorded my bassoon playing 
+      and prepared the graphs of full-system responses. </p>
+    <p>New material copyright 2006 by James B. Kopp <br>
+      <strong>James B. Kopp</strong> has been a commercial reed maker (and teacher 
+      of reed making and adjustment techniques) since 1991, specializing in reeds 
+      for bassoon, contrabassoon, and early bassoon. </p>
+    <p><a href="#top">[Top] </a></p>
+    <p><br>
+      <strong><a name="section7"></a><font size="+1">7. End Notes</font></strong><br>
+      <strong>1</strong> <a name="note1"></a>In the researchers&#8217; &#8220;external 
+      excitation&#8221; method, the bassoon is &#8220;fingered&#8221; by the use of 
+      stoppers and wedges to close the appropriate holes and keys, while an external 
+      sound source &#8211; in effect, a tiny speaker with carefully controlled volume 
+      &#8211; is used to excite the pipe resonances. Using a small microphone, the 
+      researchers measure the results in acoustic ohms. See Backus 1974: 1273-79 for 
+      a detailed description. </p>
+    <p><strong>2</strong> <a name="note2"></a>Benade 1960: 148-49. When Benade described 
+      this experiment, six-ounce Coca-Cola bottles were common. Today&#8217;s broad-shouldered 
+      bottles do not overblow as readily. The experiment can be performed more easily 
+      using a long, narrow vessel like a test tube. </p>
+    <p><strong>3</strong> <a name="note3"></a>I have simplified the issues here for 
+      purposes of discussion. In reality, a phenomenon called frequency- dependent 
+      wall damping causes slight shifts in the resonances, as C. J. Nederveen pointed 
+      out to me. Even truly harmonic overtones, if the bassoon produced them, would 
+      result in just intonation, not the equally tempered scale to which modern pianos 
+      are tuned. </p>
+    <p><strong>4</strong><a name="note4"></a> &#8220;... the different sections in 
+      the bassoon ... have conical bores of different tapers. Furthermore, the cone 
+      is not complete out to the tip, but is cut off short of the tip and the reed 
+      substituted; the bassoon would be some 30 centimeters (12 inches) longer if 
+      it were a complete cone. These factors produce deviations of the resonance frequencies 
+      from the desired tempered scale values....&#8221; Backus 1977: 238. </p>
+    <p><strong>5</strong> <a name="note5"></a>Backus 1974: 1274-75. </p>
+    <p><strong>6</strong> <a name="note6"></a>Benade 1960: 224. The bassoon has an 
+      unusually large downward extension of range. But pitches below F (sometimes 
+      called the seven-finger pitch, to simplify comparisons to other woodwinds) are 
+      not normally used as the basis of higher modes. Meanwhile, the highest first-mode 
+      fingerings &#8211; Eb3 through F3 &#8211; serve as ancestors only for &#8220;technical&#8221; 
+      alternate fingerings. </p>
+    <p><strong>7</strong> <a name="note7"></a>This is true during sustained tones, 
+      but not during attacks. </p>
+    <p><strong>8</strong> <a name="note8"></a>Rounding prevents some of these products 
+      from matching exactly. </p>
+    <p><strong>9</strong> <a name="note9"></a>A portion of this increase in ratio 
+      is due to the additional sharpening effect of the cross-finger vent; this effect 
+      is discussed below. </p>
+    <p><strong>10</strong> <a name="note10"></a>Backus seems not to have addressed 
+      the pitch-ratio discrepancy between pipe resonances and full-system resonances 
+      in print, although he would surely have been aware of it. The following statement 
+      neglects the issue: &#8220;The actual playing frequencies of a reed instrument 
+      are therefore approximately the same as the resonance frequencies measured for 
+      the air column with the reed end closed [the pipe, that is], and thus correspond 
+      to the high impedance peaks for the input impedance curves. The intonation of 
+      a given instrument will then depend critically on the frequencies of the impedance 
+      peaks.&#8221; Backus 1974: 1266. </p>
+    <p><strong>11</strong> <a name="note11"></a>Backus 1977: 243-45. </p>
+    <p><strong>12</strong> <a name="note12"></a>This interaction is explained more 
+      technically in a theory called interlocking or mode locking. See Benade 1990: 
+      445; Fletcher and Rossing 1991: 143-44. Multiphonic tones are an exception to 
+      this scheme; see Backus 1977: 250-51 and Benade 1990: 565-55, for an introduction. 
+    </p>
+    <p><strong>13</strong> <a name="note13"></a>Backus 1974: 1274-75. </p>
+    <p><strong>14</strong> <a name="note14"></a>&#8220;[Benade&#8217;s] measurements 
+      show that musically satisfactory instruments have cutoff frequencies within 
+      the range ... 300-600 Hz for bassoons.&#8221; Fletcher and Rossing 1991: 476. 
+      This statement seems to be a liberal interpretation of Benade 1990: 487-88, 
+      fig. 22.8, where a graph shows cutoff frequencies for baroque, Buffet, and Heckel-type 
+      bassoons. The range shown for Heckel 7170, most appropriate to our discussion, 
+      appears to extend from about 380 Hz to 520 Hz. Meanwhile, Cronin 1996: 24 found 
+      that &#8220;The bassoon&#8217;s cutoff frequency is about 400 Hz over most of 
+      the range of the instrument.&#8221; </p>
+    <p><strong>15</strong> <a name="note15"></a>Benade remarked on the potency of 
+      the overtone compression: &#8220;... an air column provided with open tone holes 
+      &#8216;looks&#8217; longer when it is asked to vibrate in a high-frequency mode 
+      than it does when it is vibrating in a lower-frequency mode. On woodwinds, this 
+      phenomenon by itself accounts for a flattening of any upper resonance frequency 
+      relative to the lowest one. This flattening (which can amount to an appreciable 
+      fraction of a semitone) may need to be offset by alterations in the bore profile 
+      when the instrument is adjusted to play properly.&#8221; Benade 1991: 432-33. 
+    </p>
+    <p><strong>16</strong> <a name="note16"></a>Corey 1980: 30-32 found these pitches 
+      to be &#8220;often flat&#8221; or &#8220;almost always flat.&#8221; </p>
+    <p><strong>17</strong> <a name="note17"></a>See Nederveen 1998: 90-91 for a technical 
+      discussion of the effects of closed key holes and bore perturbations. </p>
+    <p><strong>18</strong> <a name="note18"></a>Cronin 1996: 23 described the production 
+      of the third and higher modes: &#8220;The effect [of cross-fingerings] is to 
+      misalign the lower air-column resonances while strengthening the third, fourth 
+      or fifth resonance so that a high note is produced.&#8221; He drew a distinction 
+      between cross fingerings and half-hole fingerings, writing that &#8220;small 
+      vents opened to facilitate octave overblowing are not considered tone holes 
+      in this definition.&#8221; Yet the half-hole can at times have the effect of 
+      sharpening the second-mode response, just as the cross- finger vent sharpens 
+      the higher-mode responses. </p>
+    <p><strong>19</strong> <a name="note19"></a>Benade 1960: 224. </p>
+    <p><strong>20</strong> <a name="note20"></a>The particular sharpness of G3 is 
+      a complicated matter outside the scope of our discussion. See Cronin 1996: 26 
+      for a detailed explanation. </p>
+    <p><strong>21</strong> <a name="note21"></a>Backus 1977: 228. For further comments, 
+      see Benade 1990: 455. </p>
+    <p><strong>22</strong> <a name="note22"></a>Baines wrote that &#8220;the high 
+      register of the bassoon is obtained by sharp-sounding harmonics that almost 
+      defy analysis.&#8221; These sharp resonances are not harmonics, to speak precisely, 
+      but we understand that Baines was describing the stretched resonance curve. 
+      He continued, &#8220;To give two of the less mystifying examples, A4 and E5 
+      on the German model are made as third and fourth harmonics of low-register C#3 
+      (theoretically G#4 and C#5 respectively).&#8221; Baines 1991: 38. </p>
+    <p><strong>23</strong> <a name="note23"></a>&#8220;The various &#8216;long fingerings&#8217; 
+      for C#4 are also cross-fingerings.&#8221; Cronin 1996: 23.</p>
+    <p><a href="#top">[Top] </a></p>
+    
+
+
+
+  </div>
+
+	
+  
+</div>
+<!-- End PAGE CONTENT -->
+
+<!-- dshea-include BEGIN include/footer.html ***************** -->
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-24" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p>
+</div>
+<!-- dshea-include END include/footer.html ***************** -->
+
+<script src="include/navscript.js" type="text/javascript"></script>
+
+</body>
+</html>
