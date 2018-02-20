@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<title>Kopp Reeds - Contrabassophon</title>
+
+<!-- dshea-include BEGIN include/header.html ***************** -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="main.css" type="text/css">
+<!-- dshea-include END include/header.html ***************** -->
+
+<style>
+  #picture1 {float: right;}
+  #picture2 {width:100%; max-width:450px; }
+</style>
+
+<body>
+
+<!-- dshea-include BEGIN include/nav.html ***************** -->
+<nav class="w3-sidebar w3-blue-grey w3-collapse w3-top w3-large w3-padding-small" style="z-index:3;width:225px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-24"><b>Kopp Reeds</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a id="homeMenu" href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a id="myBtn" href="javascript:void(0)" onclick="myAccFunc()" class="w3-bar-item w3-button w3-hover-white">
+    Reeds <i class="fa fa-caret-down"></i></a> 
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-small w3-medium">
+      <a href="modern.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Modern Bassoon</a>
+      <a href="french.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">French Bassoon</a>
+      <a href="contra.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contra Bassoon</a>
+      <a href="bassDulcian.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Bass Dulcian</a>
+      <a href="baroque.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Baroque Bassoon</a>
+      <a href="classical.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Classical Bassoon</a>
+    </div>
+    <a href="store.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Store</a> 
+    <a href="customers.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Customers Speak</a> 
+    <a href="lessons.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Lessons</a> 
+    <a href="publications.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Publications</a> 
+    <a href="tradingPost.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Jim's Trading Post</a>
+    <a href="links.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Links</a>
+    <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact Us</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-blue-grey w3-xlarge w3-padding-small">
+  <a href="javascript:void(0)" class="w3-button w3-blue-grey w3-margin-right" onclick="w3_open()">&#9776;</a>
+  <span>Kopp Reeds</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close();" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<!-- dshea-include END include/nav.html ***************** -->
+
+
+
+<!-- PAGE CONTENT -->
+<div class="w3-main" style="margin-left:250px;margin-right:25px">
+
+  <div class="w3-container" style="margin-top:80px">
+		<h1 class="w3-xxlarge w3-text-blue-grey"><b>FOR SALE: <font color="#FF0000">SOLD</font></b></h1>
+  	<hr style="width:50px;border:5px solid grey" class="w3-round">
+  </div>
+
+  <div class="w3-container">
+	
+    <p><b>HISTORIC BASSOONS FROM THE COLLECTION OF JOHN MILLER</b> <br>
+    For further information and photos, please contact John Miller at <br>
+    mille108[at]umn.edu
+    </p>	
+
+    <p><b>Contrabassophon by H. J. Haseneier, Coblenz, ca. 1850–80,</b> This
+    ultra-compact configuration was the original inspiration for the Heckel
+    contrabassoon. The very wide bore and shallow tone holes are similar in
+    principle to those of Guntram Wolf's modern Contraforte. Haseneier's
+    forward-looking invention inspired many imitators. Almost all surviving
+    exemplars are in museum collections. Complete and playable in historic case,
+    with modern bocal. $20,000 negotiable.</p>
+
+  </div>
+
+  <div class="w3-container">
+  	<img  id="picture2" src="images/Contrabassophon.jpg">
+  </div>
+  
+</div>
+<!-- End PAGE CONTENT -->
+
+<!-- dshea-include BEGIN include/footer.html ***************** -->
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-24" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p>
+</div>
+<!-- dshea-include END include/footer.html ***************** -->
+
+<script src="include/navscript.js" type="text/javascript"></script>
+
+</body>
+</html>

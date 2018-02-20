@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<title>Kopp Reeds - Jim's Trading Post</title>
+
+<!-- dshea-include BEGIN include/header.html ***************** -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="main.css" type="text/css">
+<!-- dshea-include END include/header.html ***************** -->
+
+<style>
+  #picture1 {float: right;}
+  #picture2 {width:100%; max-width:450px; }
+</style>
+
+<body>
+
+<!-- dshea-include BEGIN include/nav.html ***************** -->
+<nav class="w3-sidebar w3-blue-grey w3-collapse w3-top w3-large w3-padding-small" style="z-index:3;width:225px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-24"><b>Kopp Reeds</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a id="homeMenu" href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a id="myBtn" href="javascript:void(0)" onclick="myAccFunc()" class="w3-bar-item w3-button w3-hover-white">
+    Reeds <i class="fa fa-caret-down"></i></a> 
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-small w3-medium">
+      <a href="modern.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Modern Bassoon</a>
+      <a href="french.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">French Bassoon</a>
+      <a href="contra.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contra Bassoon</a>
+      <a href="bassDulcian.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Bass Dulcian</a>
+      <a href="baroque.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Baroque Bassoon</a>
+      <a href="classical.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Classical Bassoon</a>
+    </div>
+    <a href="store.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Store</a> 
+    <a href="customers.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Customers Speak</a> 
+    <a href="lessons.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Lessons</a> 
+    <a href="publications.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Publications</a> 
+    <a href="tradingPost.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Jim's Trading Post</a>
+    <a href="links.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Links</a>
+    <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact Us</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-blue-grey w3-xlarge w3-padding-small">
+  <a href="javascript:void(0)" class="w3-button w3-blue-grey w3-margin-right" onclick="w3_open()">&#9776;</a>
+  <span>Kopp Reeds</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close();" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<!-- dshea-include END include/nav.html ***************** -->
+
+
+
+<!-- PAGE CONTENT -->
+<div class="w3-main" style="margin-left:250px;margin-right:25px">
+
+  <div class="w3-container" style="margin-top:80px">
+		<h1 class="w3-xxlarge w3-text-blue-grey"><b>Jim's Trading Post</b></h1>
+  	<hr style="width:50px;border:5px solid grey" class="w3-round">
+  </div>
+
+  <div class="w3-container">
+
+    <p align="left">The following instruments, accessories, sheet music and 
+      supplies are available, mostly on a one-of-a-kind basis. For further description, 
+      you may send an e-mail inquiry.</p>
+    <p align="left"> Please go to <a href="orderform.html">Order Form</a> to 
+      pay by PayPal or credit card, or send a check or money order, <font color="#FF0000">payable 
+      to <u>James Kopp</u></font>, as payment in full. If you aren't satisfied 
+      with your purchase, return it within 10 days of shipment, in undiminished 
+            condition, for a full refund, except for a deduction of our actual shipping 
+      cost plus $3.00 handling. If at the end of 10 days we haven't heard from 
+      you, we will assume that you are satisfied, and the sale will become final. 
+    </p>
+    <p align="center"><img src="images/accent2.gif" width="150" height="35"></p>
+    <div align="left"> 
+      <div align="left"> 
+        <div align="left"></div>
+      </div>
+      <ul>
+        <li><a href="RustBassoon.html">Classical Bassoon Hanchet/Rust</a> <font color="#FF0000"><strong>SOLD</strong></font></li>
+        <li><a href="images/Nolemi%205662%20worldsystem.pdf">Heckel Bassoon 
+          #5662</a></li>
+        <li><a href="Tenorshawm.html">Tenor Shawm by Moeck</a></li>
+        <li><a href="moeck.html">Moeck &quot;Modern&quot; Tenor Recorder</a></li>
+        <li><a href="rossbaroque.html">Baroque bassoon after Georg Heinrich 
+          Scherer</a> <font color="#FF0000"><strong>SOLD</strong></font></li>
+        <li><a href="bocals.html">Bocals!</a></li>
+        <li><a href="vintagecane.html">Vintage Processed Cane</a>- Clearance 
+          sale! </li>
+        <li><a href="images/scraper2.jpg">Scraping bed, disc scraper, and easels</a> 
+          offered by <a href="http://mysite.verizon.net/ross.bassoon/bocalT.html">Leslie 
+          Ross</a></li>
+        <li><a href="Savary.html">Tenor bassoon by Jean Nicolas Savary jeune.</a> 
+          <strong><font color="#FF0000">SOLD</font></strong> </li>
+        <li><a href="contrabassophon.html">Contrabassophon by H. J. Haseneier.</a> 
+          <strong><font color="#FF0000">SOLD</font></strong> </li>
+        <li><a href="Heckel1887.html">Bassoon by Wilhelm Heckel, Biebrich, ca. 
+          1887.</a> <strong><font color="#FF0000">SOLD</font></strong></li>
+        <li><a href="rackett.html">Steinkopf/Moeck Rackett-Bassoon.</a> <strong><font color="#FF0000">SOLD</font></strong></li>
+        <li><a href="dial.html">Heckel Dial Indicator</a> <strong><font color="#FF0000">SOLD</font></strong></li>
+        <li><a href="shaper.html">Shaper Handles and Tips for Bassoon, Baroque 
+          Bassoon, and Shawm</a> <strong><font color="#FF0000">SOLD</font></strong></li>
+        <li><a href="heckel.html">Original Heckel Bassoon, pre-1877- See Pictures.</a> 
+          <strong><font color="#FF0000">SOLD</font></strong> </li>
+        <li>Reed blanks in discontinued styles. 
+          <ul>
+            <li> These are first-quality blanks of first-quality cane, but they 
+              do not match our current preferences. Available in 1.35 or 1.15 
+              mm gouge. $10 each. With tip clipped and finished by tip machine, 
+              $12 each. Please inquire for quantity discounts. Quantities are 
+              limited.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+	
+  </div>
+	
+  
+</div>
+<!-- End PAGE CONTENT -->
+
+<!-- dshea-include BEGIN include/footer.html ***************** -->
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-24" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p>
+</div>
+<!-- dshea-include END include/footer.html ***************** -->
+
+<script src="include/navscript.js" type="text/javascript"></script>
+
+</body>
+</html>
