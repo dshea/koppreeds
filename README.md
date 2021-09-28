@@ -24,10 +24,10 @@ dshea-include BEGIN filename
 dshea-include END filename
 ```
 
-and will replace the text inbetween these comments with the contents of the file **filename**
+and will replace the text in between these comments with the contents of the file **filename**
 
 ## command line syntax
 
 ```
-dshea-include.py <file1 [file2 ...]>
+./dshea-include.py <file1 [file2 ...]>
 ```
