@@ -71,21 +71,29 @@
     <hr>
     <p>Type any questions below and I will respond promptly.<br>
       Thank You!</p>
-    <form method="post" action="/cgi-sys/formmail.pl" name="sendmessage">
+
+    <form method="post" action="http://koppreeds.com/formmail.php" name="ContactForm">
+      <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
+      <input type="hidden" name="recipients" value="myaddress" />
+      <input type="hidden" name="required" value="EmailAddr:Your email address,FullName:Your name" />
+      <input type="hidden" name="subject" value="AnchesMessage" />
+
+      <!-- this derives (creates) "email" and "realname" special fields from the input fields -->
+      <input type="hidden" name="derive_fields" value="email=EmailAddr,realname=FullName" />
+
+      <!-- this excludes the "email" and "realname" special fields from the body of the email you receive -->
+      <input type="hidden" name="mail_options" value="Exclude=email;realname" />
+    
       <p> Name: 
-        <input name="Name" type="text" id="Name">
+        <input name="FullName" type="text">
         <br>
         Email: 
-        <input name="Email" type="text" id="Email">
+        <input name="EmailAddr" type="text">
         <br>
         Message:<BR>
-        <textarea name="message" cols="80" rows="15" id="message"></textarea>
+        <textarea name="message" cols="80" rows="15"></textarea>
       </p>
-      <input name="Submit" type="submit" id="Submit" value="Send">
-      <input name="recipient" type="hidden" id="recipient" value="james@koppreeds.com">
-      <input name="subject" type="hidden" id="subject" value="AnchesMessage">
-      <input name="title" type="hidden" id="title" value="Thank You for Your Message">
-      <input name="MailTo" type="hidden" id="MailTo" value="James Kopp, 6704 SE 20th Avenue, Portland, OR 97202">
+      <input type="submit" value="Submit" />
     </form>
 
   </div>
