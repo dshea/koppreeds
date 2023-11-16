@@ -68,33 +68,6 @@
     <p align="center">(201) 656-0107<br>
       10AM - 6PM Pacific Time<br>
       Monday - Friday</p>
-    <hr>
-    <p>Type any questions below and I will respond promptly.<br>
-      Thank You!</p>
-
-    <form method="post" action="http://koppreeds.com/formmail.php" name="ContactForm">
-      <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
-      <input type="hidden" name="recipients" value="myaddress" />
-      <input type="hidden" name="required" value="EmailAddr:Your email address,FullName:Your name" />
-      <input type="hidden" name="subject" value="AnchesMessage" />
-
-      <!-- this derives (creates) "email" and "realname" special fields from the input fields -->
-      <input type="hidden" name="derive_fields" value="email=EmailAddr,realname=FullName" />
-
-      <!-- this excludes the "email" and "realname" special fields from the body of the email you receive -->
-      <input type="hidden" name="mail_options" value="Exclude=email;realname" />
-    
-      <p> Name: 
-        <input name="FullName" type="text">
-        <br>
-        Email: 
-        <input name="EmailAddr" type="text">
-        <br>
-        Message:<BR>
-        <textarea name="message" cols="80" rows="15"></textarea>
-      </p>
-      <input type="submit" value="Submit" />
-    </form>
 
   </div>
 
